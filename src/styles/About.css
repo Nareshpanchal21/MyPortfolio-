@@ -1,0 +1,60 @@
+/* About Section */
+.about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #004e92, #000428);
+    color: white;
+    padding: 0 10%;
+  }
+  
+  /* Flex Container */
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  /* Left Side - About Content */
+  .about-content {
+    max-width: 50%;
+  }
+  
+  .about-content h2 {
+    font-size: 36px;
+    color: #f39c12;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  /* Right Side - Profile Image */
+  .about-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #f39c12;
+    object-fit: cover;
+  }
+  
+  /* Responsive for Mobile */
+  @media screen and (max-width: 768px) {
+    .about-container {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  
+    .about-content {
+      max-width: 90%;
+    }
+  
+    .about-image img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  

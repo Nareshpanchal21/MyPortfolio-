@@ -1,0 +1,129 @@
+/* Projects Section */
+.projects {
+    text-align: center;
+    padding: 50px 10%;
+    background: linear-gradient(to right, #000428, #004e92);
+    color: white;
+  }
+  
+  .projects h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #f39c12;
+  }
+  
+  /* Projects Grid */
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Project Card */
+  .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Project Title */
+  .project-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #f39c12;
+  }
+  
+  /* Project Description */
+  .project-card p {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 15px;
+  }
+  
+  /* Skills Container */
+  .skills-container {
+    margin-bottom: 15px;
+  }
+  
+  .skill {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .skill span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f39c12;
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    height: 8px;
+    border-radius: 4px;
+    margin-top: 5px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background: #f39c12;
+    text-align: right;
+    padding-right: 5px;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 8px;
+    border-radius: 4px;
+  }
+  
+  /* View Project Button */
+  .btn {
+    display: inline-block;
+    background: #f39c12;
+    color: black;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background: #e67e22;
+  }
+  
+  /* Responsive for Mobile */
+  @media screen and (max-width: 768px) {
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 200px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    body, html {
+      overflow-x: hidden; /* Background shift hone se roke */
+    }
+  
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .project-card {
+      width: 300px; /* Width ko kam nahi hone dega */
+      margin: 10px auto; /* Auto margin se center rahega */
+    }
+  }
+  

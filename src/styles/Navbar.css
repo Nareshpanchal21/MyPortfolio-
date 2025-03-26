@@ -1,0 +1,78 @@
+/* Basic Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #222;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 50px;  /* Fixed height */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  /* Navbar Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-right: 10px;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .nav-links li:hover {
+    color: #f39c12;
+  }
+  
+  /* Menu Icon (For Mobile) */
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Navbar for Mobile */
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+      margin-right: 30px;
+    }
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 95%;
+        display: flex;
+        justify-content: center; /* Links ko center karna */
+        padding: 10px 0;
+        display: none;
+        color: rgb(175, 188, 33);
+      }
+    
+      .nav-links.open {
+        display: flex;
+        flex-direction: row; /* Horizontal layout */
+        gap: 15px; /* Links ke beech gap */
+      }
+    
+      .nav-links li {
+        font-size: 18px;
+        padding: 10px 10px; /* Spacing */
+        background-color: #333;
+      }
+    }
+  
+  
