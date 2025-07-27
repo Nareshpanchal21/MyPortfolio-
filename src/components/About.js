@@ -22,7 +22,7 @@ const About = () => {
 
         {/* Right Side - Image */}
         <div className="about-image">
-          <img src="/img/profile.jpg" alt="Naresh Panchal" />
+       <img src={`${process.env.PUBLIC_URL}/img/profile.jpg`} alt="Naresh Panchal" />
         </div>
       </div>
     </section>
